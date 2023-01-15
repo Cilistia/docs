@@ -1,0 +1,35 @@
+import { Resources } from '@/components/Resources'
+import { Documentation } from '@/components/Documentation'
+import { HeroPattern } from '@/components/HeroPattern'
+
+export const description =
+  "Cilistia is the world's first revenue-sharing, decentralized P2P cryptocurrency marketplace that distributes 70% of its revenue to $CIL token stakers."
+
+export const sections = [
+  { title: 'Marketplace', id: 'documentation' },
+  { title: 'Tokenomics', id: 'resources' },
+]
+
+<HeroPattern />
+
+# Introduction
+
+Cilistia is the world's first revenue-sharing, decentralized P2P cryptocurrency marketplace that distributes 70% of its revenue to $CIL token stakers. {{ className: 'lead' }}
+
+Cilistia uses smart contracts to facilitate trades between buyers and sellers. When a trade is initiated, a smart contract is created to hold the funds in escrow until both parties agree that the trade has been completed. {{ className: 'lead' }}
+
+This ensures that the funds are secure and cannot be released without the consent of both parties. This also means that there is no need for a third party to act as a mediator or custodian of the funds, as is the case with centralized exchanges. {{ className: 'lead' }}
+
+<div className="not-prose mb-16 mt-6 flex gap-3">
+  <Button href="/buyerprotection" arrow="right" children="Buyer Protection" />
+  <Button
+    href="/cil"
+    variant="outline"
+    arrow="right"
+    children="CIL Tokenomics"
+  />
+</div>
+
+<Documentation />
+
+<Resources />
